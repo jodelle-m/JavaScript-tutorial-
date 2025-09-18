@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+        <input placeholder="Type something" class="js-input" 
+        onkeyup="
+            const inputElement = document.querySelector('.js-input');
+            document.querySelector('.js-message')
+            .innerHTML = inputElement.value;
+            ">
+
+        <p class="js-message"></p>
+  </body>
+</html>
+
+<!--9g.
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+  </head>
+  <body>
+    <p>Amazon Shipping Calculator</p>
+        <input placeholder="Cost of order" class="js-cost" onkeydown="handleCostKeydown(event);">
+
+        <button onclick="calculateTotal();">Calculate</button>
+        <p class="js-total"></p>
+
+    <script>
+        function handleCostKeydown(event) {
+            if (event.key === 'Enter') {
+                calculateTotal();
+            }
+        }
+
+        function calculateTotal () {
+            const inputElement = document.querySelector('.js-cost');
+
+            let cost = Number(inputElement.value) * 100;
+
+            if (cost < 4000) {
+                cost += 1000;
+            }
+
+            document.querySelector('.js-total')
+            .innerHTML = `$${(cost/100).toFixed(2)}`;
+        }
+    </script>
+  </body>
+</html>
+-->
+
+<!--9f.
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input placeholder="Name" class="js-name"
+    onkeydown = "
+        if (event.key === 'Enter') {
+            displayMessage();
+        }">
+
+    <button onclick="displayMessage();">Submit</button>
+    
+    <p class ="js-message"></p>
+
+    <script>
+        function displayMessage () {
+            const inputElement = document.querySelector('.js-name');
+            document.querySelector('.js-message')
+                .innerHTML = `Your name is: ${inputElement.value}`;
+        }
+    </script>
+  </body>
+</html>
+-->
+
+<!--
+9e.
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input placeholder="Name" class="js-name"
+    onkeydown = "
+        if (event.key === 'Enter') {
+            displayMessage();
+        }">
+
+    <button onclick="displayMessage();">Submit</button>
+    
+    <p class ="js-message"></p>
+
+    <script>
+        function displayMessage () {
+            const inputElement = document.querySelector('.js-name');
+            document.querySelector('.js-message')
+                .innerHTML = `Your name is: ${inputElement.value}`;
+        }
+    </script>
+  </body>
+</html> -->
+
+<!--
+9d.
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input placeholder="Name" class="js-name">
+
+    <button onclick="const inputElement = document.querySelector('.js-name');
+    document.querySelector('.js-message')
+    .innerHTML = `Your name is: ${inputElement.value}`;">Submit</button>
+    
+    <p class ="js-message"></p>
+    <script>
+    
+    </script>
+  </body>
+</html>
+
+
+9c.
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick="document.querySelector('.js-choice')
+    .innerHTML = 'You chose: heads';">heads</button>
+    
+    <button onclick="document.querySelector('.js-choice')
+    .innerHTML = 'You chose: tails';">tails</button>
+
+    <p class ="js-choice"></p>
+    <script>
+    
+    </script>
+  </body>
+</html>
+
+
+9b.
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick="const buttonElement = document.querySelector('.js-button');
+    
+    if (buttonElement.innerHTML === '9a') {
+        buttonElement.innerHTML = '9b done!';
+
+    } else {
+        buttonElement.innerHTML = '9a';
+    }
+    " class="js-button">9a</button>
+
+    <script>
+    
+    </script>
+  </body>
+</html>
+
+
+9a.
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button>9a</button>
+
+    <script>
+      console.log(document.querySelector('button'));
+    </script>
+  </body>
+</html> 
+-->
+
+
+
+
+
