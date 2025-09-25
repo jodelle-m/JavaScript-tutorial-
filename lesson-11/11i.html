@@ -5,20 +5,20 @@
     </head>
     <body>
         <script> 
-           function addOne(array) {
+           function addNum(array, num) {
             const result = [];
 
             for (let i = 0; i < array.length; i++) {
-                result.push(array[i] + 1);
+                result.push(array[i] + num);
             }
 
             return result;
 
            }
-           console.log(addOne([1, 2, 3]));
-           console.log(addOne([-2, -1, 0, 99]));
+           console.log(addNum([1, 2, 3], 2));
+           console.log(addNum([1,2,3], 3));
+           console.log(addNum([-2, -1, 0, 99], 2));
         </script>
     </body>
 </html>  
 
-<!--to be continued TT-->
