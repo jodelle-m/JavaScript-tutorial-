@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>External Libraries</title>
+    </head>
+    <body>
+         <script type="module">
+            import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
+            import isWeekend from './15f.js'
+
+           let date = dayjs();
+           console.log(date.format('dddd, MMMM D'));
+           console.log(isWeekend(date));
+
+           date = dayjs().add(2, 'day');
+           console.log(date.format('dddd, MMMM D'));
+           console.log(isWeekend(date));
+
+           date = dayjs().add(4, 'day');
+           console.log(date.format('dddd, MMMM D'));
+           console.log(isWeekend(date));
+
+           date = dayjs().add(6, 'day');
+           console.log(date.format('dddd, MMMM D'));
+           console.log(isWeekend(date));
+
+        </script>
+    </body>
+</html> 
