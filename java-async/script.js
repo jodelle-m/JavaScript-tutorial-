@@ -5,7 +5,7 @@ const postForm = document.getElementById("postForm");
 // fetch and display posts
 async function getPosts() {
   try {
-    const response = await fetch(API_URL + "?_limit=3"); // get first 3 for demo
+    const response = await fetch(API_URL + "?_limit=5"); // get first 3 for demo
     const posts = await response.json();
     displayPosts(posts);
   } catch (error) {
@@ -71,6 +71,11 @@ async function editPost(id) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedPost),
     });
+
+   
+    console.log("Response status:", response.status);
+    const data = await response.json();
+    console.log("Response data:", data);
 
     if (response.status === 200) {
       alert("Post updated successfully!");
